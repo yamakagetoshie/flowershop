@@ -22,6 +22,9 @@ h1{
     padding:20px;
   }
   
+  a {
+    text-decoration: none;
+  }
   
  /*========= navigation ===============*/ 
   nav ul{
@@ -43,6 +46,29 @@ h1{
     color:rgb(124, 122, 122); 
   }
   
+  .main-nav dl {
+    background: #006400;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+  }
+
+  .main-nav dl dt {
+    font-size: 0.8rem;
+  }
+
+  .main-nav dl a {
+    color: #fff;
+    font-size: 0.8rem;
+
+    
+  }
+  
+  
+
+
+
+
  /*========= section ===============*/ 
   section{
     padding:30px;
