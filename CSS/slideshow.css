@@ -4,6 +4,19 @@
 スライダーのためのcss
 ===================================*/
 #slider {
-    width: 100%;
+    width: 50%;
     height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+
+.top-wrapper {
+display: flex;
+position: relative;
+}
+
+.top-shopname {
+width: 50%;
+height: 100vh;
+position: absolute;
+top: 50%;
+left: 50%;
 }

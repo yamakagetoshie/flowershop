@@ -1,13 +1,18 @@
 @charset "utf-8";
 
+body {
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
 h1 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.2rem;
   text-align: center;
-  margin: 0 0 30px 0;
+  //margin: 0 0 30px 0;
 }
 
 p {
@@ -28,6 +33,10 @@ a {
 
 ul {
   margin-inline-start: -40px;
+}
+
+li {
+    list-style: none;
 }
 
 /*========= navigation ===============*/
@@ -52,7 +61,7 @@ nav ul li a:hover {
 .main-nav dl {
   background: #006400;
   color: #fff;
-  padding: 20px 40px;
+  padding: 15px 40px;
 }
 
 .main-nav dl dt {
@@ -70,13 +79,9 @@ nav ul li a:hover {
   display: flex;
   justify-content: end;
   align-items: center;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 1.0);
   color: #000;
-  padding: 20px;
 }
-
-
-
 
 
 /*========= section ===============*/
@@ -84,6 +89,110 @@ section {
   padding: 30px;
 }
 
-section:nth-child(2n) {
-  background: #f3f3f3;
+section:nth-child(odd) {
+  background: rgba(216,191,216,0.3);
 }
+
+/*========= about ===============*/
+/*button-borderクラスはbutton.cssに記載している*/
+.about-area {
+writing-mode: vertical-rl;
+margin: 10%;
+
+}
+
+.about-heding {
+padding-left: 20px;
+}
+
+.about-desc {
+padding-left: 20px;
+}
+
+.gallery-link {
+vertical-align: middle;
+text-align: center;
+}
+
+/*button-borderのレイアウトクラス*/
+.button-vertical {
+ padding: 100px 30px;
+}
+
+#about {
+display: flex;	/*左右揃えのため*/
+justify-content: center;
+height: 80vh;
+}
+
+
+/*========= itemlist ===============*/
+/*縦書き見出しの設定　vertical-title*/
+.vertical-title {
+display: flex;	/*左右揃えのため*/
+justify-content: center;
+
+}
+
+.vertical-title h2 {
+writing-mode: vertical-rl;
+font-size: 1.5rem;
+margin: 30px 0;
+}
+
+.itemlist-inner {
+writing-mode: vertical-rl;
+background: #000;
+}
+
+.itemlist-inner-list {
+display: grid;
+//width: 100%;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px 20px;
+}
+
+.itemlist-inner-items {
+
+}
+
+.itemlist-inner-link {
+
+}
+
+.itemlist-inner-text {
+
+}
+
+.itemlist-inner-image {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*button-borderのレイアウトクラス*/
+.button-horizontal {
+padding: 30px 100px;
+
+}
+
+
